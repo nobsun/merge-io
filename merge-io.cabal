@@ -1,0 +1,20 @@
+Name:			merge-io
+Version:		0.1
+Category:		Concurrent
+Synopsis:		Library providing mergeIO and nmergeIO
+Description:		This package provides mergeIO and nmergeIO deprecated in Control.Concurrent module. In this package they use MVar instead of QSem originally used.
+License:		BSD3
+Author:			Nobuo Yamashita
+Maintainer:		nobsun@sampou.org
+Build-Type:		Simple
+Cabal-Version:		>= 1.14
+
+Library
+  Default-Language:         Haskell2010
+  Hs-Source-Dirs:	    src/
+  Build-Depends:	    base >= 4.5 && < 5, SafeSemaphore
+  Exposed-modules:	    Control.Concurrent.Merge
+
+Source-Repository head
+  type:		  darcs
+  location:	  http://darcs.sampou.org/marge-io

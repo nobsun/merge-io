@@ -12,7 +12,7 @@ Cabal-Version:		>= 1.14
 Library
   Default-Language:         Haskell2010
   Hs-Source-Dirs:	    src/
-  Build-Depends:	    base >= 4.5 && < 5, SafeSemaphore
+  Build-Depends:	    base >= 4.5 && < 5
   Exposed-modules:	    Control.Concurrent.Merge
 
 Source-Repository head
